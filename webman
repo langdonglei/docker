@@ -23,3 +23,6 @@ RUN docker-php-source delete \
 
 RUN mkdir -p /app
 WORKDIR /app
+
+# docker build --platform linux/arm64 webman.arm64 .
+# windows可能要先 docker pull --platform linux/arm64 php:8.4.23-cli-alpine 不太清楚是否必须 --platform linux/arm64
